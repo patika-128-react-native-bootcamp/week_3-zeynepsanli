@@ -18,9 +18,7 @@ export default function Navigation() {
           component={ProductsStack}
           options={{
             drawerLabel: 'Products',
-            drawerIcon: ({size, color}) => (
-              <Icon name="food-croissant" color={color} size={size} />
-            ),
+            drawerIcon: ({ ...rest }) => <Icon name="food-croissant" {...rest} />,
             drawerActiveTintColor: '#ab47bc',
           }}
         />
@@ -29,9 +27,7 @@ export default function Navigation() {
           component={MenuStack}
           options={{
             drawerLabel: 'Menu',
-            drawerIcon: ({size, color}) => (
-              <Icon name="book-open-page-variant" color={color} size={size} />
-            ),
+            drawerIcon: ({ ...rest }) => <Icon name="book-open-page-variant" {...rest} />,
             drawerActiveTintColor: '#ab47bc',
           }}
         />
@@ -40,9 +36,7 @@ export default function Navigation() {
           component={TableStack}
           options={{
             drawerLabel: 'Tables',
-            drawerIcon: ({size, color}) => (
-              <Icon name="table-furniture" color={color} size={size} />
-            ),
+            drawerIcon: ({ ...rest }) => <Icon name="table-furniture" {...rest} />,
             drawerActiveTintColor: '#ab47bc',
           }}
         />
